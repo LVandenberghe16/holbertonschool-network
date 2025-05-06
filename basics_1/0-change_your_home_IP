@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+# clone the host folder
 cp /etc/hosts /etc/hosts.bak
 
 sed -i '/\slocalhost$/d' /etc/hosts
