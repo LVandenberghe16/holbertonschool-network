@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-#!/bin/bash
-
 echo "Active Internet connections (only servers)"
-ss -tunlp | grep -w LISTEN
+netstat -tunlp
 echo "Active UNIX domain sockets (only servers)"
-ss -xlp | grep -w LISTEN
+netstat -lxp
