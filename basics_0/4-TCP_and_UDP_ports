@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 echo "Active Internet connections (only servers)"
 netstat -tunlp
-echo ""
 echo "Active UNIX domain sockets (only servers)"
 netstat -lxp
