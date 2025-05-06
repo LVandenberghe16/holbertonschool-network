@@ -1,2 +1,8 @@
 #!/usr/bin/env bash
-ss -tulnp | grep LISTEN
+#!/bin/bash
+
+echo "Active Internet connections (only servers)"
+ss -tunlp | grep -w LISTEN
+echo ""
+echo "Active UNIX domain sockets (only servers)"
+ss -xlp | grep -w LISTEN
